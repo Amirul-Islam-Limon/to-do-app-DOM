@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Amirul Islam Limon" content="A Simple To Do App" />
+    <meta name="description" content="A simple To Do App" />
+    <title>To Do App-DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo">
+        <img src="images/myLogo.png" alt="Amirul Islam Limon" />
+      </div>
+      <h1 id="header" class="header">To-Do App</h1>
+
+      <form class="new-task-container box">
+        <label for="new-task">Add New Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>My Task-2</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>My Task-3</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>My Task-4</label>
+          </li>
+        </ul>
+      </div>
+      <!--/todo-list-->
+
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <ul class="completed-items">
+          <li class="item">My Task-1 (<small>That's already done.</small>) <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+      <!--/complete-list-->
+    </section>
+    <section>
+      <p><small>Amirul Islam Limon © 2023</small></p>
+    </section>
+    <!-- /container -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
